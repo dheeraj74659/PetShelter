@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/petsHomeFragment">
+    <fragment
+        android:id="@+id/petsHomeFragment"
+        android:name="com.example.petshelter.PetsHome.PetsHomeFragment"
+        android:label="fragment_pets_home"
+        tools:layout="@layout/fragment_pets_home">
+        <action
+            android:id="@+id/action_petsHomeFragment_to_addPetsFragment"
+            app:destination="@id/addPetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPetsFragment"
+        android:name="com.example.petshelter.AddPets.AddPetsFragment"
+        android:label="fragment_add_pets"
+        tools:layout="@layout/fragment_add_pets" />
+</navigation>
